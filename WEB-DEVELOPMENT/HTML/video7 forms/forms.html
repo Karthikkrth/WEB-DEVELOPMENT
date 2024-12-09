@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Forms -lets learn it</title>
+  </head>
+  <body>
+    <form action="post">
+      <h2>FORM TO APPLY A ROLE IN KRTH TEAM</h2>
+      <div>
+        <label for="username">NAME :</label>
+        <input
+          type="text"
+          id="username"
+          name="Username "
+          placeholder="Enter the name : "
+          required
+          autofocus
+        />
+        <button>sumbit</button>
+      </div>
+      <div>
+        <label>GENDER :</label>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+      </div>
+      <div>
+        <input type="checkbox" id="join" name="join" value="yes" />
+        <label for="join">Willing go join KRTH</label>
+      </div>
+      <div>
+        <label for="comment">Comments: </label>
+        <textarea name="comment" rows="6" cols="60" id="comment">
+        Enter your thoughts  about krth here...
+  </textarea
+        >
+      </div>
+      <div>
+        <label for="crypto">Crypto Currency : </label>
+        <select id="crypto" name="crypto">
+          <option value="bitcoin">Bitcoin</option>
+          <option value="ethereum">Ethereum</option>
+          <option value="doge">Dogecoin</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="date">Select the date and time : </label>
+        <input type="datetime-local" name="date" id="date" />
+      </div>
+    </form>
+  </body>
+</html>
