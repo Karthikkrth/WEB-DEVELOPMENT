@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors</title>
+    <style>
+              /* .box:first-child{
+                  background-color: greenyellow;
+              } */
+              /* .box::first-line{
+                  color: red;
+              } */
+               *{
+                  /* margin: 2px;
+                  padding: 3px;
+               }
+               .boxes *{
+                  color: red;
+                  border:2px solid black;
+               }
+               [antha="assam"]{
+                   background-color: greenyellow;
+                   margin: 10px;
+                   padding: 25px;
+               } */
+                /* .box:nth-child(odd){
+      background-color: pink;
+                } */
+                 /* .box:nth-last-child(3){
+                        background-color: pink;
+                 } */
+                  .boxes::before{
+                    content: "This is krth";
+                    color: navy;
+                  }
+                  .boxes::after{
+                    content: "Bye GUYS...";
+                    color: royalblue;
+                  }
+                  ::selection{
+                    background-color: yellow;
+                    color: black;
+                  }
+                  .box::first-letter{
+                    font-size: 2em;
+                    color: rgb(0, 81, 255);
+                  }
+                  input::placeholder{
+                    color: red;
+                    font-size: 15px;
+                  }
+    </style>
+  </head>
+  <body>
+    <div class="boxes">
+      <div antha="assam" class="box">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque harum
+        est exercitationem quidem expedita delectus ducimus reiciendis a
+        sapiente aperiam. Quam illum ab quibusdam voluptates recusandae
+        veritatis adipisci excepturi explicabo.
+      </div>
+      <div class="box">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque harum
+        est exercitationem quidem expedita delectus ducimus reiciendis a
+        sapiente aperiam. Quam illum ab quibusdam voluptates recusandae
+        veritatis adipisci excepturi explicabo.
+      </div>
+      <div class="box">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque harum
+        est exercitationem quidem expedita delectus ducimus reiciendis a
+        sapiente aperiam. Quam illum ab quibusdam voluptates recusandae
+        veritatis adipisci excepturi explicabo.
+        
+      </div>
+    </div>
+    <input type="text" placeholder="Enter the text" >
+  </body>
+</html>

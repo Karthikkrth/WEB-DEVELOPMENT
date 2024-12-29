@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Specificity & Cascade</title>
+    <style>
+      .yellow {
+        color: yellow !important;
+      }
+
+      .cpurple {
+        color: purple;
+      }
+      .cred {
+        color: green;
+      }
+      h1 {
+        color: red;
+      }
+      [type="h1"] {
+        background-color: rgb(255, 0, 204);
+      }
+    </style>
+  </head>
+  <body>
+    <h1 type="h1" style="color: cyan" class="yellow cred cpurple">
+      CSS Specificity
+    </h1>
+  </body>
+</html>

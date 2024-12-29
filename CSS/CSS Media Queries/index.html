@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Media Queries</title>
+    <style>
+      body {
+        background-color: aqua;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      @media only screen and (orientation: landscape) {
+        body {
+          border: 5px solid rgb(0, 0, 0);
+        }
+      }
+      @media only screen and (min-width: 600px) {
+        body {
+          background-color: rgb(2, 255, 40);
+        }
+      }
+      .boxes{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .box {
+        width: 340px;
+        height: 340px;
+        background-color: steelblue;
+        margin: 9px;
+        padding: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    I had an Aqua body
+    <div class="boxes">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
