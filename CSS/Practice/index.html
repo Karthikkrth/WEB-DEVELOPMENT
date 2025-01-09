@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      div + p {
+        background-color: aquamarine;
+      }
+      .bu {
+        padding: 16px;
+        margin: 5px;
+        font-size: 20px;
+      }
+      .bu:hover {
+        color: aqua;
+        background-color: blue;
+      }
+      
+      .c:checked {
+        background-color: rgb(255, 0, 0);
+      }
+      .c::selection {
+        content: "hello all of you select one : ";
+        background-color: rgb(225, 0, 255);
+      }
+      input:focus {
+        border: 6px solid rgb(157, 0, 255);
+        background-color: rgb(255, 255, 0);
+        color: white;
+      }
+      input[type="radio"]:checked +label {
+        color: rgb(0, 255, 30);
+        font-weight: bold;
+      }
+      .p{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 15px;
+        font-weight:bolder;
+        font-style:oblique;
+        font-variant:normal;
+        color: rgb(255, 149, 0);
+        text-align: center;
+        text-decoration:underline;
+        text-transform:capitalize;
+        line-height: 40px;
+        text-shadow: 9px 5px 15px rgb(0, 234, 255);
+        text-size-adjust:calc(12+1);
+        text-indent: 30px;
+      }
+      /* div{ 
+        background-color: palegreen !important;
+      }
+      div{
+        background-color: blueviolet;
+      } */
+      
+
+
+      .box{
+        border: 2px solid black;
+        margin: 10px;
+        padding: 10px;
+        box-sizing:border-box;
+        width:45vw;
+        height: 55vh;
+        /* width:50vmax;
+        height: 30vmin; */
+        text-overflow: ellipsis;
+        overflow:hidden;
+        white-space: nowrap;
+        font-size: 10px;
+        display: inline-block;
+
+      }
+      .box>p{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        /* font-size: 150%;
+        font-size: 2em; */
+        font-size: 1.5rem;
+        
+      }
+      .b2{
+        margin-top: 10px;
+        padding: 40px;
+        border: 3px solid black;
+        display: inline-block;
+      }
+      .container {
+        padding: 1px; /* Add padding to prevent margin collapse */
+        /* display: inline-block; */
+        background-color: hsl(100, 100%, 100);
+      }
+    </style>
+  </head>
+  <body>
+    hello guys...
+    <div>bye guys...</div>
+    <p class="hi">WELCOME TO CSS</p>
+    <p>SELECTORS</p>
+    <input type="text" placeholder="Enter the name: " name="name" id="name" />
+    <div class="bu"><button>HELLO</button> just kidding</div>
+    <div class="c">
+      hello <br />bye
+      <label for="gender"></label>
+      <input type="radio" name="gender" id="male" />
+      <label for="male">male</label>
+      <input type="radio" name="gender" id="female" />
+      <label for="female">Female</label>
+    </div>
+    <div class="p">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores porro,
+        laudantium consectetur repellat, quaerat sed quod earum sapiente ut
+        totam, rerum dolorum et.
+      </p>
+    <div class="container">
+      <div class="box box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, quis cum accusamus eius asperiores rem quod ducimus perferendis veritatis reiciendis, maxime consequatur!, ipsum dolor sit amet consectetur adipisicing elit. Nihil animi labore aliquam porro maxime sapiente ipsum doloribus, delectus alias nemo voluptates libero deserunt? Facere beatae saepe perferendis modi ratione assumenda dolorem cumque voluptatibus? Hic?
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque fugit commodi est corporis quam, ipsam modi, porro nulla soluta amet velit? Quod officia asperiores ipsum sunt omnis natus nihil corrupti.lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi sint et mollitia rem iure officia fugit delectus itaque fuga autem, quos, laborum fugiat. Assumenda itaque architecto vitae laudantium voluptatem similique.</p>
+      </div>
+      <div class="box b2">Lorem ipsum d\olor sit amet consectetur adipisicing elit. Quis deleniti in omnis minima porro. Recusandae voluptatibus maxime accusantium minima, ad, laborum, expedita quod quos distinctio quibusdam eius dolores nesciunt autem!</div>
+    </div>
+  </body>
+</html>

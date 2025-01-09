@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Exercise layout</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: aquamarine;
+        height: 850px;
+      }
+      ul li {
+        display: inline;
+        padding: 35px;
+      }
+      a {
+        text-decoration: none;
+      }
+      button {
+        background-color: red;
+        border-style: none;
+        padding: 10px 20px 10px 20px;
+        border-radius: 8px;
+        margin: 2px 2px 2px 22px;
+      }
+      nav {
+        z-index: 10;
+        width: 100%;
+      }
+      .nav {
+        background-color: aqua;
+        font-family: "Poppins", serif;
+        font-weight: bold;
+      }
+      .boxes {
+        display: flex;
+        /* justify-content: center; */
+        /* align-items: center; */
+      }
+      .box1 {
+        background-color: red;
+        width: 400px;
+        height: 300px;
+        padding: 10px;
+        margin: 109px 19px 10px 108px;
+        overflow: hidden;
+      }
+      header {
+        position: sticky;
+        top: 0;
+      }
+      .box2 {
+        background-color: rgb(0, 255, 98);
+        width: 400px;
+        height: 300px;
+        padding: 10px;
+        margin: 109px 10px 10px 223px;
+        overflow: hidden;
+      }
+      .container {
+        background-color: rgb(217, 255, 0);
+        width: 700px;
+        height: 250px;
+        margin: 100px 10px 0px 450px;
+        /* text-align: center; */
+        /* justify-content: center; */
+        border-radius: 66px;
+      }
+      .container p {
+        font-size: 20px;
+        font-weight: bold;
+        font-family: poppins;
+        padding: 120px 0 0 150px;
+      }
+      .large {
+        background-color: rgb(107, 103, 230);
+      }
+      footer {
+        text-align: center;
+        font-size: 24px;
+        color: white;
+        background-color: black;
+        padding: 20px;
+        margin: 0;
+      }
+      img {
+        width: 50px;
+        height: 50px;
+        margin: 0px;
+
+        position: fixed;
+        bottom: 100px;
+        right: 10px;
+        border-radius: 50%;
+        display: inline;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="nav">
+      <nav>
+        <ul>
+          <li>LAYOUT WEBSITE</li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Conatct</a></li>
+          <li><a href="#">Address</a></li>
+          <button>Sign in</button>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="boxes">
+        <div class="box1">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates
+            ipsam perferendis laborum obcaecati sed, velit aliquam quibusdam
+            fugiat molestias repellat omnis incidunt ipsum accusamus cumque
+            error quis facilis reiciendis officiis. ipsum dolor sit amet,
+            consectetur adipisicing elit. Voluptas ab repudiandae vitae
+            accusamus vero. Velit eius quaerat deleniti repellat hic. ipsum
+            dolor sit amet consectetur adipisicing elit. Ratione! ipsum dolor
+            sit amet, consectetur adipisicing elit. ipsum dolor sit, amet
+            consectetur adipisicing elit. Sunt in facilis magnam! ipsum dolor
+            sit amet consectetur adipisicing elit. Dolor quas libero deserunt
+            similique? Quia a architecto fuga tempora doloremque animi nostrum
+            blanditiis.
+          </p>
+        </div>
+        <div class="box2">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis odio
+            autem ab eveniet repudiandae, suscipit a qui doloremque reiciendis
+            dignissimos, possimus ullam! ipsum, dolor sit amet consectetur
+            adipisicing elit. Veritatis quo iste maiores aliquam, magni illo
+            dolorum reiciendis voluptate, modi optio natus neque. ipsum dolor
+            sit amet consectetur adipisicing elit. Porro ratione explicabo, quas
+            suscipit iusto amet repellat beatae illo temporibus eius dolore
+            alias ad inventore aspernatur iste corrupti necessitatibus
+            repudiandae repellendus voluptatibus! Maxime, dolorem? ipsum dolor
+            sit amet consectetur adipisicing elit. Adipisci fugit totam
+            repellendus laboriosam at a error nam dolor perspiciatis provident
+            alias, voluptate harum similique quam odit labore fuga sit
+            necessitatibus.
+          </p>
+        </div>
+        <img
+          src="https://i.pinimg.com/originals/b9/2b/f1/b92bf19612e524ac1f9d5e998770eba7.jpg"
+          alt=""
+        />
+      </div>
+      <div class="large">
+        <div class="container"><p>SIGMA WEBDEVELOPMENT EXPREESS</p></div>
+      </div>
+    </main>
+    <footer><div>Made by Krth &copy;</div></footer>
+  </body>
+</html>
